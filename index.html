@@ -3,90 +3,335 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Amplify Developments LLC | Construction Management & Turnkey Delivery</title>
-  <meta name="description" content="Amplify Developments LLC provides construction management and turnkey delivery in Texas, giving owners visibility, control, and accountability from permits through closeout." />
+  <title>Amplify Developments LLC | General Contracting in Texas</title>
+  <meta name="description" content="Amplify Developments LLC is a Texas general contractor providing disciplined execution, budget control, project visibility, and turnkey construction delivery." />
+  <meta property="og:title" content="Amplify Developments LLC" />
+  <meta property="og:description" content="Build in Texas with full project visibility." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://amplify.build/" />
+  <meta property="og:image" content="https://amplify.build/assets/amplify-logo-new.png" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#111111" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <a href="#top" class="brand"><img src="assets/amplify-logo.svg" alt="Amplify Developments LLC logo" /></a>
-    <nav class="nav"><a href="#visibility">Visibility</a><a href="#process">Process</a><a href="#services">Services</a><a href="#contact">Contact</a></nav>
+  <div class="page-grid" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <a href="#top" class="brand" aria-label="Amplify Developments home">
+      <img src="assets/amplify-logo-new.png" alt="Amplify Developments LLC" />
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+
+    <nav class="nav" id="mainNav" aria-label="Main navigation">
+      <a href="#approach">Approach</a>
+      <a href="#visibility">Visibility</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
     <a class="header-cta" href="#contact">Discuss Your Project</a>
   </header>
 
   <main id="top">
     <section class="hero">
-      <div class="grid-mark">GRID A / 01</div>
-      <div class="hero-content">
-        <p class="eyebrow">Commercial Construction Management · Texas</p>
-        <h1>Build in Texas Without Managing the Process.</h1>
-        <p class="hero-copy">Amplify serves as your single point of accountability from permitting through project completion — managing contractors, schedules, budgets, reporting, and execution every step of the way.</p>
-        <div class="hero-actions"><a class="btn primary" href="#contact">Schedule a Consultation</a><a class="btn secondary" href="#process">See Our Process</a></div>
+      <div class="hero-blueprint" aria-hidden="true">
+        <span class="bp-label label-a">GRID A</span>
+        <span class="bp-label label-b">DETAIL 01</span>
+        <span class="bp-label label-c">TX / 2026</span>
+        <i class="beam beam-a"></i>
+        <i class="beam beam-b"></i>
+        <i class="beam beam-c"></i>
       </div>
-      <div class="hero-panel" aria-label="Project dashboard preview">
-        <div class="panel-top"><span>Project Control</span><span>TX-042</span></div>
-        <div class="metric"><span>Budget Status</span><strong>Controlled</strong><div class="bar"><i style="width:72%"></i></div></div>
-        <div class="metric"><span>Schedule Progress</span><strong>68%</strong><div class="bar"><i style="width:68%"></i></div></div>
-        <div class="metric"><span>Change Requests</span><strong>Documented</strong><div class="bar"><i style="width:42%"></i></div></div>
-        <div class="panel-foot"><span>Photos · Reports · Approvals</span></div>
+
+      <div class="hero-content reveal">
+        <p class="eyebrow">General Contracting · Texas</p>
+        <h1>Build in Texas.<br><span>With full project visibility.</span></h1>
+        <p class="hero-copy">
+          Amplify manages contractors, budgets, schedules, reporting, approvals, and execution from construction readiness through final turnover — protecting your investment at every stage.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#contact">Discuss Your Project</a>
+          <a class="btn ghost" href="#process">See Our Process</a>
+        </div>
+
+        <div class="hero-points">
+          <div><strong>One</strong><span>Point of Accountability</span></div>
+          <div><strong>Full</strong><span>Project Visibility</span></div>
+          <div><strong>Structured</strong><span>Cost & Change Control</span></div>
+        </div>
+      </div>
+
+      <div class="dashboard-shell reveal delay-1">
+        <div class="dashboard-top">
+          <div>
+            <span class="status-dot"></span>
+            <small>PROJECT CONTROL</small>
+          </div>
+          <small>TX-042 / LIVE</small>
+        </div>
+
+        <div class="dashboard-summary">
+          <div>
+            <small>Current Phase</small>
+            <strong>Construction Execution</strong>
+          </div>
+          <span class="status-badge">Controlled</span>
+        </div>
+
+        <div class="dashboard-grid">
+          <article>
+            <small>Budget</small>
+            <strong>92%</strong>
+            <p>Committed & tracked</p>
+            <div class="progress"><i data-progress="92"></i></div>
+          </article>
+          <article>
+            <small>Schedule</small>
+            <strong>On Track</strong>
+            <p>Milestones monitored</p>
+            <div class="progress"><i data-progress="76"></i></div>
+          </article>
+          <article>
+            <small>Change Orders</small>
+            <strong>3</strong>
+            <p>Approved & documented</p>
+          </article>
+          <article>
+            <small>Progress Photos</small>
+            <strong>247</strong>
+            <p>Centralized updates</p>
+          </article>
+        </div>
+
+        <div class="activity-line">
+          <span>Latest update</span>
+          <strong>Foundation milestone verified</strong>
+          <small>Today · 4:12 PM</small>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#approach" aria-label="Scroll to next section">
+        <span>Scroll</span><i></i>
+      </a>
+    </section>
+
+    <section id="approach" class="section approach">
+      <div class="drawing-tag">SECTION A / 02</div>
+
+      <div class="section-intro reveal">
+        <p class="eyebrow">Construction Management With Investment Protection</p>
+        <h2>We manage construction with the discipline your capital requires.</h2>
+        <p>
+          Amplify is the General Contractor and single point of accountability for project execution. We coordinate the trades, control documentation, monitor costs, manage changes, and keep owners informed without requiring them to manage day-to-day construction.
+        </p>
+      </div>
+
+      <div class="capability-grid">
+        <article class="reveal">
+          <span>01</span>
+          <h3>Contractor Coordination</h3>
+          <p>Trade sequencing, site logistics, insurance compliance, field communication, and execution oversight.</p>
+        </article>
+        <article class="reveal delay-1">
+          <span>02</span>
+          <h3>Budget Control</h3>
+          <p>Project-level visibility into committed costs, progress billing, and approved adjustments.</p>
+        </article>
+        <article class="reveal delay-2">
+          <span>03</span>
+          <h3>Schedule Management</h3>
+          <p>Milestone tracking, dependency management, and early identification of potential delays.</p>
+        </article>
+        <article class="reveal">
+          <span>04</span>
+          <h3>Change Administration</h3>
+          <p>Changes are documented, priced, reviewed, and approved before implementation.</p>
+        </article>
+        <article class="reveal delay-1">
+          <span>05</span>
+          <h3>Progress Reporting</h3>
+          <p>Photos, field updates, budget status, decisions, and key documentation in one place.</p>
+        </article>
+        <article class="reveal delay-2">
+          <span>06</span>
+          <h3>Closeout & Turnover</h3>
+          <p>Punch list, lien releases, warranties, final inspections, and organized project handoff.</p>
+        </article>
       </div>
     </section>
 
-    <section class="section problem">
-      <div class="section-label">DETAIL B-2</div>
-      <div class="split">
-        <div><p class="eyebrow">Construction Without Surprises</p><h2>Most projects do not fail because of construction. They fail because of poor control.</h2></div>
-        <div><p>Unclear communication, uncontrolled changes, weak documentation, and limited visibility create risk for owners. Amplify provides disciplined execution, centralized communication, budget control, and structured project oversight.</p></div>
-      </div>
-      <div class="cards four">
-        <article><span>01</span><h3>Budget Control</h3><p>Track committed costs, approved changes, and project-level financial visibility.</p></article>
-        <article><span>02</span><h3>Schedule Control</h3><p>Monitor milestones, trade coordination, and execution progress.</p></article>
-        <article><span>03</span><h3>Change Management</h3><p>Every change is reviewed, documented, priced, and approved before implementation.</p></article>
-        <article><span>04</span><h3>Project Visibility</h3><p>Owners stay informed without managing day-to-day construction activities.</p></article>
-      </div>
-    </section>
+    <section id="visibility" class="section visibility">
+      <div class="visibility-copy reveal">
+        <p class="eyebrow">Every Project. One Source of Truth.</p>
+        <h2>Know what is happening without chasing updates.</h2>
+        <p>
+          Each project is managed through a centralized platform that organizes construction progress, approvals, financial status, schedules, documents, and communication.
+        </p>
 
-    <section id="visibility" class="section platform">
-      <div class="platform-copy"><p class="eyebrow">Every Project. One Platform.</p><h2>Visibility built into the process.</h2><p>Our clients receive access to a centralized project management platform where they can monitor progress, review budgets, approve change requests, access documents, and stay informed throughout construction.</p></div>
-      <div class="platform-card">
-        <div class="mock-header"><span></span><span></span><span></span><strong>PROJECT DASHBOARD</strong></div>
-        <div class="mock-grid">
-          <div><small>Progress Photos</small><strong>Live Updates</strong></div>
-          <div><small>Budget Tracking</small><strong>Current</strong></div>
-          <div><small>Schedule</small><strong>On Watch</strong></div>
-          <div><small>Change Orders</small><strong>Pending Approval</strong></div>
-          <div class="wide"><small>Documents</small><strong>Plans · Reports · Waivers · Warranties</strong></div>
+        <ul class="feature-list">
+          <li>Progress photos and field updates</li>
+          <li>Budget and payment tracking</li>
+          <li>Schedule milestones</li>
+          <li>Change request approvals</li>
+          <li>Plans, reports, waivers, and warranties</li>
+          <li>Centralized project communication</li>
+        </ul>
+      </div>
+
+      <div class="platform-window reveal delay-1">
+        <div class="window-bar">
+          <div><span></span><span></span><span></span></div>
+          <small>AMPLIFY PROJECT PORTAL</small>
+          <small>OWNER VIEW</small>
+        </div>
+
+        <div class="portal-layout">
+          <aside>
+            <strong>Project</strong>
+            <a class="active">Overview</a>
+            <a>Budget</a>
+            <a>Schedule</a>
+            <a>Photos</a>
+            <a>Documents</a>
+            <a>Approvals</a>
+          </aside>
+
+          <div class="portal-content">
+            <div class="portal-title">
+              <div>
+                <small>PROJECT OVERVIEW</small>
+                <h3>Texas Construction Program</h3>
+              </div>
+              <span>Live</span>
+            </div>
+
+            <div class="portal-metrics">
+              <article><small>Completion</small><strong>68%</strong></article>
+              <article><small>Open Decisions</small><strong>2</strong></article>
+              <article><small>Budget Status</small><strong>Controlled</strong></article>
+            </div>
+
+            <div class="portal-chart">
+              <div class="chart-header"><small>Progress by Phase</small><strong>Updated today</strong></div>
+              <div class="chart-row"><span>Site & Foundation</span><i><b style="width:100%"></b></i><small>100%</small></div>
+              <div class="chart-row"><span>Structure</span><i><b style="width:82%"></b></i><small>82%</small></div>
+              <div class="chart-row"><span>MEP</span><i><b style="width:54%"></b></i><small>54%</small></div>
+              <div class="chart-row"><span>Finishes</span><i><b style="width:18%"></b></i><small>18%</small></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="process" class="section process">
-      <div class="section-heading"><p class="eyebrow">How We Deliver</p><h2>From permits to closeout, every phase is controlled.</h2></div>
-      <div class="timeline">
-        <div><span>01</span><h3>Permits & Readiness</h3><p>Review permit status, construction readiness, budget, schedule, and required documentation.</p></div>
-        <div><span>02</span><h3>Mobilization</h3><p>Coordinate contractors, insurance, site logistics, safety planning, and execution requirements.</p></div>
-        <div><span>03</span><h3>Construction Execution</h3><p>Manage trades, schedule, quality, site coordination, reporting, and field communication.</p></div>
-        <div><span>04</span><h3>Budget & Change Control</h3><p>Document changes, evaluate cost impact, obtain approvals, and maintain financial visibility.</p></div>
-        <div><span>05</span><h3>Closeout & Turnover</h3><p>Manage punch list, warranties, final documentation, lien waivers, and project turnover.</p></div>
+      <div class="schedule-bg" aria-hidden="true">
+        <i style="--w:24%;--x:4%;--y:18%"></i>
+        <i style="--w:39%;--x:16%;--y:33%"></i>
+        <i style="--w:62%;--x:30%;--y:48%"></i>
+        <i style="--w:28%;--x:57%;--y:63%"></i>
+      </div>
+
+      <div class="section-intro compact reveal">
+        <p class="eyebrow">How We Deliver</p>
+        <h2>From construction readiness to final turnover.</h2>
+      </div>
+
+      <div class="process-steps">
+        <article class="reveal">
+          <span>01</span>
+          <h3>Construction Readiness</h3>
+          <p>Confirm permits, approved plans, budget, insurance, documentation, and execution requirements.</p>
+        </article>
+        <article class="reveal delay-1">
+          <span>02</span>
+          <h3>Mobilization</h3>
+          <p>Coordinate trades, site logistics, safety, early procurement, and construction sequencing.</p>
+        </article>
+        <article class="reveal delay-2">
+          <span>03</span>
+          <h3>Execution</h3>
+          <p>Manage field operations, quality, inspections, communication, and milestone completion.</p>
+        </article>
+        <article class="reveal delay-3">
+          <span>04</span>
+          <h3>Control & Reporting</h3>
+          <p>Track budget, schedule, changes, approvals, photos, and project documentation.</p>
+        </article>
+        <article class="reveal delay-4">
+          <span>05</span>
+          <h3>Closeout</h3>
+          <p>Complete punch list, waivers, warranties, final inspections, and organized turnover.</p>
+        </article>
       </div>
     </section>
 
-    <section id="services" class="section services">
-      <div><p class="eyebrow">Services</p><h2>Construction leadership focused on execution and accountability.</h2></div>
-      <div class="service-list">
-        <div><h3>General Contracting</h3><p>Single-source responsibility for construction execution, trade coordination, and project delivery.</p></div>
-        <div><h3>Construction Management</h3><p>Oversight of schedule, budget, reporting, quality control, contractors, and field progress.</p></div>
-        <div><h3>Turnkey Project Delivery</h3><p>From construction readiness through final completion, closeout documentation, and turnover.</p></div>
-        <div><h3>Owner Reporting</h3><p>Clear progress updates, budget visibility, schedule tracking, and decision documentation.</p></div>
+    <section class="section pillars">
+      <div class="pillar-intro reveal">
+        <p class="eyebrow">Why Amplify</p>
+        <h2>Clear structure. Better decisions. Stronger execution.</h2>
+      </div>
+
+      <div class="pillar-grid">
+        <article class="reveal">
+          <span>VISIBILITY</span>
+          <h3>Information you can act on.</h3>
+          <p>Project status, documentation, financial progress, and decisions are kept organized and accessible.</p>
+        </article>
+        <article class="reveal delay-1">
+          <span>CONTROL</span>
+          <h3>Changes do not happen informally.</h3>
+          <p>Scope, pricing, schedule impact, and approval are documented before additional work proceeds.</p>
+        </article>
+        <article class="reveal delay-2">
+          <span>ACCOUNTABILITY</span>
+          <h3>One responsible party.</h3>
+          <p>Amplify coordinates the construction process and remains accountable from mobilization through closeout.</p>
+        </article>
       </div>
     </section>
 
     <section id="contact" class="section contact">
-      <div class="contact-box"><p class="eyebrow">Start the Conversation</p><h2>Ready to build with more control?</h2><p>Tell us about your project and we will help you evaluate how Amplify can support execution from permits through completion.</p><a class="btn primary" href="mailto:info@amplify.build">info@amplify.build</a></div>
-      <div class="contact-details"><img src="assets/amplify-logo-light.svg" alt="Amplify Developments LLC logo" /><p>10077 Grogans Mill Rd, Suite 470<br />The Woodlands, TX 77380</p><p>Commercial Construction Management<br />General Contracting · Turnkey Delivery</p></div>
+      <div class="contact-grid" aria-hidden="true"></div>
+
+      <div class="contact-copy reveal">
+        <p class="eyebrow">Start the Conversation</p>
+        <h2>Your project.<br>Full visibility.<br>One point of accountability.</h2>
+        <p>Share your project details and we will help determine the right construction delivery approach.</p>
+        <a class="btn light" href="mailto:info@amplifydevelopments.com">Schedule a Consultation</a>
+      </div>
+
+      <div class="contact-card reveal delay-1">
+        <img src="assets/amplify-logo-new-light.png" alt="Amplify Developments LLC" />
+        <div>
+          <small>Office</small>
+          <p>10077 Grogans Mill Rd, Suite 470<br>The Woodlands, Texas 77380</p>
+        </div>
+        <div>
+          <small>Services</small>
+          <p>General Contracting<br>Construction Management<br>Turnkey Project Delivery</p>
+        </div>
+        <a href="mailto:info@amplifydevelopments.com">info@amplifydevelopments.com</a>
+      </div>
     </section>
   </main>
-  <footer><span>AMPLIFY DEVELOPMENTS LLC</span><span>TX CONSTRUCTION GRID · CONTROL / EXECUTION / DELIVERY</span></footer>
+
+  <footer>
+    <div>
+      <strong>AMPLIFY DEVELOPMENTS LLC</strong>
+      <span>Commercial Construction · Texas</span>
+    </div>
+    <span>CONTROL / VISIBILITY / EXECUTION</span>
+    <span>© <span id="year"></span> Amplify Developments LLC</span>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
